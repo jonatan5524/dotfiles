@@ -16,6 +16,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     " Themes
     Plug 'joshdick/onedark.vim'
+    Plug 'christianchiarulli/nvcode-color-schemes.vim'
     " Intellisen
     Plug 'neoclide/coc.nvim', {'branch': 'release'}    
     " Status Line
@@ -39,7 +40,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'liuchengxu/vim-which-key'
     " Floaterm
     Plug 'voldikss/vim-floaterm'
-
+    " Snippets
+    Plug 'honza/vim-snippets'
 call plug#end()
 
 " Automatically install missing plugins on startup
