@@ -18,6 +18,8 @@ export ZSH="/home/jonatan/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=blue"
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -113,6 +115,8 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="cd ~/.oh-my-zsh"
 alias codestuff="cd ~/disk2/stuff" 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias nvim=/usr/bin/nvim.appimage 
+alias ll='ls -lah'
 
 export NVM_DIR="/home/jonatan/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

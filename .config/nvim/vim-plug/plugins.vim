@@ -45,6 +45,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'honza/vim-snippets'
     " icons
     Plug 'ryanoasis/vim-devicons'
+    " Autosave
 
 call plug#end()
 
