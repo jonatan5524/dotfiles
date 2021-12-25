@@ -131,3 +131,9 @@ nvm use --lts
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 
+
+[[ -s "/home/jonatan/.gvm/scripts/gvm" ]] && source "/home/jonatan/.gvm/scripts/gvm"
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
+export GO111MODULE=on
+export PATH=${PATH}:$GOBIN

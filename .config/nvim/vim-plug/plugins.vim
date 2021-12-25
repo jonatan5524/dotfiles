@@ -45,9 +45,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'honza/vim-snippets'
     " icons
     Plug 'ryanoasis/vim-devicons'
-    " Autosave
-
-call plug#end()
+    " README preview
+    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+    
+    call plug#end()
 
 " Automatically install missing plugins on startup
 autocmd VimEnter *
