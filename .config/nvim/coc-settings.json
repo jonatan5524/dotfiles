@@ -1,5 +1,5 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "javascript", "graphql", "html", "yaml",  "json", "python", "ts", "vue", "typescript", "go"],
+  "coc.preferences.formatOnSaveFiletypes": ["css", "c", "asm", "cpp", "markdown", "javascript", "graphql", "html", "yaml",  "json", "python", "ts", "vue", "typescript", "go"],
 
   // python config
   "python.linting.enabled": true,
