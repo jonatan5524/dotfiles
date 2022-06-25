@@ -115,7 +115,6 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="cd ~/.oh-my-zsh"
 alias codestuff="cd ~/disk2/stuff" 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias nvim=/usr/bin/nvim.appimage 
 alias ll='ls -lah'
 
 export NVM_DIR="/home/jonatan/.nvm"
