@@ -1,4 +1,5 @@
 
+ZSH_THEME="powerlevel10k/powerlevel10k"
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -16,7 +17,6 @@ export ZSH="/home/jonatan/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=blue"
 
@@ -130,9 +130,22 @@ nvm use --lts
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 
+apt() { 
+	command nala "$@"
+}
+
+sudo() {
+	if [ "$1" = "apt" ]; then
+		shift
+		command sudo nala "$@"
+	else
+		command sudo "$@"
+	fi
+}
 
 [[ -s "/home/jonatan/.gvm/scripts/gvm" ]] && source "/home/jonatan/.gvm/scripts/gvm"
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export GO111MODULE=on
 export PATH=${PATH}:$GOBIN
+fpath+=${ZDOTDIR:-~}/.zsh_functions
