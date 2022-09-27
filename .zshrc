@@ -116,6 +116,7 @@ alias ohmyzsh="cd ~/.oh-my-zsh"
 alias codestuff="cd ~/disk2/stuff" 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias ll='ls -lah'
+alias tmux='tmux -u'
 
 export NVM_DIR="/home/jonatan/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -144,8 +145,10 @@ sudo() {
 }
 
 [[ -s "/home/jonatan/.gvm/scripts/gvm" ]] && source "/home/jonatan/.gvm/scripts/gvm"
+
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export GO111MODULE=on
 export PATH=${PATH}:$GOBIN
+
 fpath+=${ZDOTDIR:-~}/.zsh_functions
