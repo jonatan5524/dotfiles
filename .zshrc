@@ -131,19 +131,6 @@ nvm use --lts
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 
-apt() { 
-	command nala "$@"
-}
-
-sudo() {
-	if [ "$1" = "apt" ]; then
-		shift
-		command sudo nala "$@"
-	else
-		command sudo "$@"
-	fi
-}
-
 [[ -s "/home/jonatan/.gvm/scripts/gvm" ]] && source "/home/jonatan/.gvm/scripts/gvm"
 
 export GOPATH=$HOME/go
