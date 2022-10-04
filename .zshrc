@@ -19,7 +19,7 @@ fi
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=180"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
