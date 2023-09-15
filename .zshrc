@@ -156,5 +156,8 @@ export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export GO111MODULE=on
 export PATH=${PATH}:$GOBIN
+export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
 
 fpath+=${ZDOTDIR:-~}/.zsh_functions
+
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
